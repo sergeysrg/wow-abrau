@@ -168,7 +168,7 @@ img {
 
 /* -----Header----- */
 .hero-background {
-  background: url(/img/hero-bg.jpg);
+  background: url(./img/hero-bg.jpg);
   position: relative;
   min-height: 100vh;
 }
