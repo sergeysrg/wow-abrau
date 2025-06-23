@@ -159,7 +159,7 @@ img {
 
 /* -----Header----- */
 .hero-background {
-  background: url(../img/hero-bg.jpg);
+  background: url('../img/hero-bg.jpg');
   position: relative;
   min-height: 100vh;
 }
@@ -207,7 +207,7 @@ img {
 /* -----Hero----- */
 
 .hero-background {
-  background-image: url('/img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
