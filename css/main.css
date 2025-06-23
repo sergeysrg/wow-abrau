@@ -1,0 +1,274 @@
+/* sections */
+@import url(./sections/__header.css);
+@import url(./sections/__hero.css);
+@import url(./sections/__about.css);
+@import url(./sections/__placement.css);
+@import url(./sections/__advantages.css);
+@import url(./sections/__activities.css);
+@import url(./sections/__footer.css);
+
+/* ----------Typography---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Geologica', 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background: #fffef9;
+  color: #333;
+  font-size: 18px;
+}
+
+p {
+  color: #5d5d5d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ----------Components---------- */
+
+/* -----Button----- */
+.btn {
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Header btn */
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f2f2f;
+  background: linear-gradient(135deg, #deecf2 0%, #deecf2 100%);
+  box-shadow: 0 2px 4px rgba(83, 206, 223, 0.3);
+  padding: 20px 50px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.header__btn:hover {
+  background: linear-gradient(135deg, #deecf2 0%, #d1f9ff 100%);
+  box-shadow: 0 4px 4px #53cedf;
+}
+
+.header__btn:active {
+  background: linear-gradient(135deg, #d2f9ff 0%, #d2f9ff 100%);
+  box-shadow: inset 0 4px 4px rgba(108, 108, 108, 0.25);
+  transform: translateY(1px);
+}
+
+.header__btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Primary btn */
+.btn-primary {
+  color: #ffffff;
+  padding: 28px 56px;
+  background: linear-gradient(135deg, #395a5f 0%, #395a5f 100%);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #395a5f 0%, #76bbc5 100%);
+  box-shadow: 0 4px 4px #4fcdde;
+}
+
+.btn-primary:active {
+  background: linear-gradient(135deg, #6cbdc8 0%, #6cbdc8 100%);
+  box-shadow: inset 0 4px 4px rgba(108, 108, 108, 0.25);
+}
+
+/* Pick btn */
+.btn-pick {
+  color: #395a5f;
+  background-color: #fffef9;
+  padding: 28px 58px;
+  border: 1px solid #395a5f40;
+  border-radius: 10px;
+}
+
+.btn-pick:hover {
+  box-shadow: 0 4px 4px #6c6c6c40;
+}
+
+.btn-pick:active {
+  box-shadow: inset 0 4px 4px rgba(108, 108, 108, 0.25);
+}
+
+/* -----Swiper----- */
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placement__card-gallery {
+  height: 250px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ----------Sections---------- */
+
+/* -----Header----- */
+.hero-background {
+  background: url(/img/hero-bg.jpg);
+  position: relative;
+  min-height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 0;
+  margin: 0 20px;
+  background-color: #395a5f;
+  border-bottom-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  width: auto;
+}
+
+.nav__list {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+}
+
+.nav__list-item a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav__list-item a:hover {
+  color: #cccccc;
+}
+
+/* -----Hero----- */
+
+.hero-background {
+  background-image: url('/img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__title {
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #2a442b;
+  font-size: 96px;
+  letter-spacing: 5px;
+}
+
+.hero__wrap {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.hero__wrap-text {
+  font-weight: 300;
+}
+
+.special-text {
+  color: #2a442b;
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: 4px;
+}
+
+/* -----About----- */
+
+/* -----Placement----- */
+
+/* -----Advantages----- */
+
+/* -----Activities----- */
+
+/* -----Footer----- */
+
+.footer__map {
+  width: 500px;
+  height: 500px;
+  background-color: #333;
+}

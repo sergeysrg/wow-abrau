@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вау Абрау!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script defer src="src/swiper.js"></script>
+    <script defer src="src/map.js"></script>
+  </head>
+  <body>
+    <div class="hero-background">
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <a href="#" class="header__logo">
+              <img src="img/Vector.svg" alt="Вау Абрау!" />
+            </a>
+            <nav class="header__nav">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#activities">Чем заняться</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#about">О&nbsp;нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#placement">Выбрать дом</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#footer">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="btn header__btn">
+              Забронировать
+              <svg class="header__btn-icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  fill="#78a55a"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">АРЕНДА ДОМА</h1>
+          <div class="hero__wrap">
+            <p class="hero__wrap-text">
+              Новый таунхаус рядом с&nbsp;заповедником Большой Утриш,
+            </p>
+            <p class="hero__wrap-text">
+              историко-культурным комплексом и&nbsp;известным заводом шампанских
+              вин
+            </p>
+          </div>
+          <p class="hero__wrap-text special-text">
+            <strong>на&nbsp;берегу озера Абрау</strong>
+          </p>
+        </div>
+      </section>
+      <!-- </div> -->
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__content-text">
+              <h2 class="about__title">О&nbsp;нас</h2>
+              <p>
+                Тишина, свежий воздух и&nbsp;потрясающие пейзажи&nbsp;&mdash;
+                идеальное место для отдыха от&nbsp;городской суеты.
+              </p>
+              <p>
+                От&nbsp;таунхауса всего 500 метров до&nbsp;озера (5&nbsp;минут
+                неспешной прогулки).
+              </p>
+              <p>
+                Каждый дом имеет собственный вход с&nbsp;отдельной улицы, что
+                создает ощущение уединенности и&nbsp;комфорта.Можно арендовать
+                таунхаус полностью&nbsp;&mdash; удобно для большой компании или
+                семьи.
+              </p>
+              <div class="about__content-buttons">
+                <a href="#placement" class="btn btn-pick">Выбрать дом</a>
+                <button class="btn btn-primary">Забронировать</button>
+              </div>
+            </div>
+            <div class="about__content-image">
+              <img
+                class="about-us__img"
+                src="img/about-us.jpg"
+                alt="Дом у озера"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Placements Section -->
+    <section class="placement" id="placement">
+      <div class="container">
+        <h2 class="placement__title">Варианты размещения:</h2>
+        <div class="placement__cards">
+          <!-- Дом с бассейном -->
+          <article class="placement__card-wrap">
+            <div class="placement__card-gallery swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-5.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-6.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-7.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/placements/pool/placement-8.jpg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="placement__card-content">
+              <h3 class="placement__card-title">Дом с&nbsp;бассейном</h3>
+              <ul class="placement__card-list">
+                <li class="placement__card-item">
+                  2&nbsp;спальни с&nbsp;двуспальными кроватями
+                </li>
+                <li class="placement__card-item">
+                  Просторная кухня-гостиная с&nbsp;диваном
+                </li>
+                <li class="placement__card-item">Мангальная зона</li>
+                <li class="placement__card-item">
+                  Место для отдыха во&nbsp;дворе
+                </li>
+                <li class="placement__card-item">Бассейн</li>
+                <li class="placement__card-item">Парковочное место</li>
+              </ul>
+
+              <div class="placement__card-included">
+                <h4 class="placement__card-included-title">Включено:</h4>
+                <ul class="placement__card-included-list">
+                  <li class="placement__card-included-item">
+                    Постельное белье
+                  </li>
+                  <li class="placement__card-included-item">
+                    Индивидуальный комплект полотенец, душевая косметика
+                  </li>
+                  <li class="placement__card-included-item">Фен</li>
+                  <li class="placement__card-included-item">ТВ</li>
+                  <li class="placement__card-included-item">Чайник, посуда</li>
+                </ul>
+              </div>
+
+              <p class="placement__card-price">
+                Стоимость : <strong>от&nbsp;20&nbsp;000&nbsp;₽/сутки</strong>
+              </p>
+              <button class="btn btn-primary">Забронировать</button>
+            </div>
+          </article>
+
+          <!-- Дом без бассейна -->
+          <article class="placement__card">
+            <div class="placement__card-gallery swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/placements/without a pool/without a pool-7.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="placement__card-content">
+              <h3 class="placement__card-title">Дом без бассейна</h3>
+              <ul class="placement__card-list">
+                <li class="placement__card-item">
+                  2&nbsp;спальни с&nbsp;двуспальными кроватями
+                </li>
+                <li class="placement__card-item">
+                  Просторная кухня-гостиная с&nbsp;диваном
+                </li>
+                <li class="placement__card-item">Мангальная зона</li>
+                <li class="placement__card-item">
+                  Место для отдыха во&nbsp;дворе
+                </li>
+                <li class="placement__card-item">Парковочное место</li>
+              </ul>
+
+              <div class="placement__card-included">
+                <h4 class="placement__card-included-title">Включено:</h4>
+                <ul class="placement__card-included-list">
+                  <li class="placement__card-included-item">
+                    Постельное белье
+                  </li>
+                  <li class="placement__card-included-item">
+                    Индивидуальный комплект полотенец, душевая косметика
+                  </li>
+                  <li class="placement__card-included-item">Фен</li>
+                  <li class="placement__card-included-item">ТВ</li>
+                  <li class="placement__card-included-item">Чайник, посуда</li>
+                </ul>
+              </div>
+
+              <p class="placement__card-price">
+                Стоимость : <strong>от&nbsp;15&nbsp;000&nbsp;₽/сутки</strong>
+              </p>
+              <button class="btn btn-primary">Забронировать</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">Почему выбирают нас?</h2>
+        <div class="advantages__grid">
+          <div class="advantage-item">
+            <img src="" alt="" class="advantage-icon" />
+            <h3 class="advantage-title">Идеальное расположение</h3>
+            <p class="advantage-text">
+              Близко к&nbsp;озеру, но&nbsp;в&nbsp;тихом месте
+            </p>
+          </div>
+          <div class="advantage-item">
+            <img src="" alt="" class="advantage-icon" />
+            <h3 class="advantage-title">Все для комфортного отдыха</h3>
+            <p class="advantage-text">
+              От&nbsp;полностью оборудованной кухни до&nbsp;зоны барбекю
+            </p>
+          </div>
+          <div class="advantage-item">
+            <img src="" alt="" class="advantage-icon" />
+            <h3 class="advantage-title">Возможность объединения</h3>
+            <p class="advantage-text">Удобно для больших компаний</p>
+          </div>
+          <div class="advantage-item">
+            <img src="" alt="" class="advantage-icon" />
+            <h3 class="advantage-title">Атмосфера уюта</h3>
+            <p class="advantage-text">
+              Продуманный дизайн и&nbsp;забота о&nbsp;гостях
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+      <div class="container">
+        <h2 class="activities__title">Чем заняться рядом?</h2>
+        <div class="activities__main">
+          <div class="slide">
+            <h3 class="slide__title">
+              Трекинговые маршруты по&nbsp;виноградникам и&nbsp;горным тропам
+            </h3>
+            <img src="" alt="Пешие прогулки" />
+          </div>
+          <div class="slide">
+            <h3 class="slide__title">
+              Дегустации в&nbsp;одной из&nbsp;лучших виноделен региона
+            </h3>
+            <img src="" alt="Дегустации вин" />
+          </div>
+          <div class="slide">
+            <h3 class="slide__title">Пешие прогулки по&nbsp;берегу озера</h3>
+            <img src="" alt="Озеро" />
+          </div>
+          <div class="slide">
+            <h3 class="slide__title">
+              Водные прогулки на&nbsp;лодках, катерах и&nbsp;яхтах
+              по&nbsp;зеркальной глади озера
+            </h3>
+            <img src="" alt="Яхтинг" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h2 class="footer__title">КОНТАКТЫ</h2>
+        <div class="footer__content">
+          <div class="footer__content-contacts">
+            <address class="footer__address">
+              село Абрау-Дюрсо, Центральная ул., 2А
+            </address>
+            <a href="tel:+79394624343" class="footer__phone"
+              >+7 (939) 462-43-43</a
+            >
+          </div>
+          <div class="footer__content-socials"></div>
+          <div class="footer__content-map" id="map"></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=44ea044b-83ef-4218-ac41-9dbd6e70087d&lang=ru_RU"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+  </body>
+</html>
