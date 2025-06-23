@@ -1,12 +1,3 @@
-/* sections */
-@import url(./sections/__header.css);
-@import url(./sections/__hero.css);
-@import url(./sections/__about.css);
-@import url(./sections/__placement.css);
-@import url(./sections/__advantages.css);
-@import url(./sections/__activities.css);
-@import url(./sections/__footer.css);
-
 /* ----------Typography---------- */
 * {
   margin: 0;
