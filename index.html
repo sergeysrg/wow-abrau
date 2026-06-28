@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вау Абрау!</title>
+
+    <meta
+      name="description"
+      content="Аренда таунхаусов в Абрау-Дюрсо рядом с озером и винодельней. От 15 000₽/сутки."
+    />
+
+    <!-- OpenGraph для соцсетей -->
+    <meta
+      property="og:title"
+      content="Вау Абрау! | Аренда таунхаусов у озера"
+    />
+    <meta
+      property="og:description"
+      content="Отдых в Абрау-Дюрсо с бассейном. До озера — 5 минут."
+    />
+    <meta
+      property="og:image"
+      content="https://ваш-сайт.ru/img/social-preview.jpg"
+    />
+    <meta property="og:url" content="https://ваш-сайт.ru" />
+    <meta property="og:type" content="website" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api-maps.yandex.ru" />
+
+    <!-- Google Fonts с font-display: swap -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&font-display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=44ea044b-83ef-4218-ac41-9dbd6e70087d&lang=ru_RU"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <script defer src="src/main.js"></script>
+    <script defer src="src/burger.js"></script>
+    <script defer src="src/swiper.js"></script>
+    <script defer src="src/map.js"></script>
+    <script defer src="src/slide.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="hero-background">
+        <header class="header">
+          <div class="container">
+            <div class="header__content">
+              <a href="#" class="header__logo">
+                <img src="img/Vector.svg" alt="Логотип Вау Абрау" />
+              </a>
+              <nav class="header__nav" id="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a href="#activities">Чем заняться</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#about">О&nbsp;нас</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#placement">Выбрать дом</a>
+                  </li>
+                  <li class="nav__list-item"><a href="#footer">Контакты</a></li>
+                </ul>
+
+                <!-- Контакты для мобильного меню -->
+                <div class="mobile-menu-contacts">
+                  <a href="tel:+79394624343">+7 (939) 462-43-43</a>
+                  <address>село Абрау-Дюрсо, Центральная ул., 2А</address>
+
+                  <!-- Социальные сети для мобильного меню -->
+                  <div class="mobile-menu-socials">
+                    <a
+                      href="https://instagram.com/wow.abrau"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_234_268)">
+                          <path
+                            fill="currentColor"
+                            d="M22.4995 0.000976562H7.49982C3.37528 0.000976562 0 3.37626 0 7.50079V22.5012C0 26.6246 3.37528 30.001 7.49982 30.001H22.4995C26.624 30.001 29.9993 26.6246 29.9993 22.5012V7.50079C29.9993 3.37626 26.624 0.000976562 22.4995 0.000976562ZM27.4992 22.5012C27.4992 25.2573 25.2572 27.5009 22.4995 27.5009H7.49982C4.74327 27.5009 2.50006 25.2573 2.50006 22.5012V7.50079C2.50006 4.74388 4.74327 2.50104 7.49982 2.50104H22.4995C25.2572 2.50104 27.4992 4.74388 27.4992 7.50079V22.5012Z"
+                          />
+                          <path
+                            fill="currentColor"
+                            d="M23 9.00098C24.1046 9.00098 25 8.10555 25 7.00098C25 5.89641 24.1046 5.00098 23 5.00098C21.8954 5.00098 21 5.89641 21 7.00098C21 8.10555 21.8954 9.00098 23 9.00098Z"
+                          />
+                          <path
+                            fill="currentColor"
+                            d="M15.4998 7.00098C11.3569 7.00098 8 10.3582 8 14.5008C8 18.6418 11.3569 22.0013 15.4998 22.0013C19.6416 22.0013 22.9996 18.6418 22.9996 14.5008C22.9996 10.3582 19.6416 7.00098 15.4998 7.00098ZM15.4998 19.5013C12.7387 19.5013 10.5001 17.2626 10.5001 14.5008C10.5001 11.739 12.7387 9.50104 15.4998 9.50104C18.2609 9.50104 20.4996 11.739 20.4996 14.5008C20.4996 17.2626 18.2609 19.5013 15.4998 19.5013Z"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_234_268">
+                            <rect width="30" height="30" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://wa.me/79394624343"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="WhatsApp"
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_234_264)">
+                          <path
+                            fill="currentColor"
+                            d="M0 30L2.58 22.2605C1.27086 20.0586 0.517241 17.489 0.517241 14.7414C0.517241 6.6 7.11724 0 15.2586 0C23.4 0 30 6.6 30 14.7414C30 22.8828 23.4 29.4828 15.2586 29.4828C12.7816 29.4828 10.4488 28.8688 8.4 27.7898L0 30Z"
+                          />
+                          <path
+                            fill="white"
+                            d="M24.8327 19.7695C24.1381 18.4569 21.5768 16.9559 21.5768 16.9559C20.9973 16.6256 20.298 16.5886 19.9676 17.1776C19.9676 17.1776 19.1353 18.1756 18.9237 18.3192C17.9568 18.9741 17.0611 18.9488 16.157 18.0447L14.0559 15.9437L11.9549 13.8426C11.0508 12.9386 11.0254 12.0429 11.6804 11.0761C11.824 10.8644 12.822 10.0321 12.822 10.0321C13.411 9.70122 13.3741 9.00245 13.0437 8.42296C13.0437 8.42296 11.5427 5.8617 10.2301 5.16715C9.67168 4.8716 8.9861 4.97505 8.5396 5.42154L7.61176 6.34936C4.66833 9.29273 6.11762 12.6156 9.06104 15.5589L11.7511 18.249L14.4412 20.939C17.3847 23.8824 20.7075 25.3316 23.651 22.3883L24.5788 21.4605C25.0253 21.0129 25.1282 20.3273 24.8327 19.7695Z"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_234_264">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a
+                      href="tg://resolve?domain=wow_abrau"
+                      aria-label="Telegram"
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0.529889 14.4669L7.4425 17.0351L10.1181 25.6002C10.2893 26.1488 10.9632 26.3516 11.4105 25.9875L15.2637 22.8608C15.6676 22.5332 16.2429 22.5169 16.665 22.8218L23.6148 27.8444C24.0933 28.1906 24.7712 27.9296 24.8912 27.354L29.9823 2.97743C30.1133 2.34874 29.4927 1.82426 28.8913 2.05579L0.521789 12.9496C-0.178312 13.2184 -0.172212 14.205 0.529889 14.4669ZM9.6869 15.668L23.1967 7.38549C23.4395 7.23707 23.6893 7.56387 23.4808 7.75638L12.3313 18.0728C11.9394 18.4359 11.6866 18.9218 11.615 19.4493L11.2352 22.251C11.1849 22.6251 10.657 22.6622 10.5533 22.3002L9.0926 17.1912C8.9253 16.6085 9.1691 15.9861 9.6869 15.668Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+
+              <button type="button" class="btn header__btn">
+                Забронировать
+                <svg class="header__btn-icon" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    fill="#78a55a"
+                  />
+                </svg>
+              </button>
+
+              <!-- Бургер -->
+              <button
+                class="burger"
+                id="burger"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+              >
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero__title">Аренда дома</h1>
+              <div class="hero__wrap">
+                <p class="hero__wrap-text">
+                  Новый таунхаус рядом с&nbsp;заповедником Большой Утриш,
+                  историко-культурным комплексом и&nbsp;известным заводом
+                  шампанских вин
+                </p>
+              </div>
+              <p class="hero__wrap-text special-text">
+                <strong>на&nbsp;берегу озера Абрау</strong>
+              </p>
+              <button class="round-button">Оставить заявку</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+          <svg
+            class="about__bg"
+            width="1920"
+            height="702"
+            viewBox="0 0 1920 702"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 65C0 29.1015 29.1015 0 65 0H1855C1890.9 0 1920 29.1015 1920 65V637C1920 672.898 1890.9 702 1855 702H65C29.1015 702 0 672.898 0 637V65Z"
+              fill="#DEECF2"
+            />
+          </svg>
+
+          <div class="container">
+            <h2 class="about__title">О&nbsp;нас</h2>
+            <div class="about__content">
+              <div class="about__content-text">
+                <p>
+                  Тишина, свежий воздух и&nbsp;потрясающие пейзажи&nbsp;&mdash;
+                  идеальное место для отдыха от&nbsp;городской суеты.
+                </p>
+                <p>
+                  От&nbsp;таунхауса всего 500 метров до&nbsp;озера (5&nbsp;минут
+                  неспешной прогулки).
+                </p>
+                <p>
+                  Каждый дом имеет собственный вход с&nbsp;отдельной улицы, что
+                  создает ощущение уединенности и&nbsp;комфорта.Можно арендовать
+                  таунхаус полностью&nbsp;&mdash; удобно для большой компании
+                  или семьи.
+                </p>
+                <div class="about__content-buttons">
+                  <a href="#placement" class="btn btn-pick">Выбрать дом</a>
+                  <button type="button" class="btn btn-primary">
+                    Забронировать
+                  </button>
+                </div>
+              </div>
+              <div class="about__content-image">
+                <picture>
+                  <source srcset="img/about-us.webp" type="image/webp" />
+                  <img
+                    src="img/about-us.jpg"
+                    alt="Дом у озера"
+                    class="about__img"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Placements Section -->
+      <section class="placement" id="placement">
+        <div class="container">
+          <h2 class="placement__title">Варианты размещения</h2>
+          <div class="placement__cards">
+            <!-- Дом с бассейном -->
+            <article class="placement__card">
+              <h3 class="placement__card-title-mobile">Дом с&nbsp;бассейном</h3>
+              <div
+                class="placement__card-gallery swiper"
+                aria-label="Галерея изображений дома с бассейном"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-1.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-2.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-3.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-4.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-5.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-6.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-7.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/pool/placement-8.jpg"
+                      alt="Вид дома с бассейном"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="placement__card-content">
+                <h3 class="placement__card-title">Дом с&nbsp;бассейном</h3>
+                <ul class="placement__card-list">
+                  <li class="placement__card-item">
+                    2&nbsp;спальни с&nbsp;двуспальными кроватями
+                  </li>
+                  <li class="placement__card-item">
+                    Просторная кухня-гостиная с&nbsp;диваном
+                  </li>
+                  <li class="placement__card-item">Мангальная зона</li>
+                  <li class="placement__card-item">
+                    Место для отдыха во&nbsp;дворе
+                  </li>
+                  <li class="placement__card-item">Бассейн</li>
+                  <li class="placement__card-item">Парковочное место</li>
+                </ul>
+
+                <div class="placement__card-included">
+                  <h4 class="placement__card-included-title">Включено:</h4>
+                  <ul class="placement__card-included-list">
+                    <li class="placement__card-included-item">
+                      Постельное белье
+                    </li>
+                    <li class="placement__card-included-item">
+                      Индивидуальный комплект полотенец, душевая косметика
+                    </li>
+                    <li class="placement__card-included-item">Фен</li>
+                    <li class="placement__card-included-item">ТВ</li>
+                    <li class="placement__card-included-item">
+                      Чайник, посуда
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Характеристики с иконками -->
+                <div class="placement__card-features">
+                  <div class="placement__card-feature">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0001 4.51697C11.6581 4.51697 8.94092 7.23834 8.94092 10.5803C8.94092 13.9181 11.6581 16.6395 15.0001 16.6395C18.3421 16.6395 21.0593 13.9181 21.0593 10.5803C21.0593 7.23834 18.3421 4.51697 15.0001 4.51697Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M19.2459 16.3948C18.1012 17.2292 16.6923 17.7282 15.1701 17.7282C13.648 17.7282 12.2391 17.2292 11.0943 16.3948C6.83405 17.2209 4.75 19.5271 4.75 23.3932V25.3137C4.75 25.5486 4.93872 25.733 5.16934 25.733H8.87613H9.03125H9.17188C9.25 25.733 9.41431 25.733 9.41431 25.733H9.56665H9.71475H20.6255C20.7902 25.733 20.8561 25.733 20.6255 25.733H21.4641H25.1709C25.4015 25.733 25.5902 25.5486 25.5902 25.3137V23.3932C25.5902 19.5271 23.5062 17.2209 19.2459 16.3948Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span>До 6 гостей</span>
+                  </div>
+                  <div class="placement__card-feature">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.3126 0H15.8126C15.6303 0 15.4554 0.072433 15.3265 0.201364C15.1976 0.330295 15.1251 0.505164 15.1251 0.6875C15.1251 0.869836 15.1976 1.0447 15.3265 1.17364C15.4554 1.30257 15.6303 1.375 15.8126 1.375H19.653L13.2641 7.76394C13.1984 7.82736 13.146 7.90322 13.11 7.9871C13.074 8.07097 13.055 8.16119 13.0542 8.25247C13.0534 8.34376 13.0708 8.43429 13.1054 8.51878C13.14 8.60327 13.191 8.68003 13.2556 8.74458C13.3201 8.80914 13.3969 8.86018 13.4814 8.89475C13.5659 8.92932 13.6564 8.94672 13.7477 8.94592C13.839 8.94513 13.9292 8.92616 14.0131 8.89013C14.0969 8.8541 14.1728 8.80173 14.2362 8.73606L20.6251 2.34719V6.1875C20.6251 6.36984 20.6976 6.54471 20.8265 6.67364C20.9554 6.80257 21.1303 6.875 21.3126 6.875C21.495 6.875 21.6699 6.80257 21.7988 6.67364C21.9277 6.54471 22.0001 6.36984 22.0001 6.1875V0.6875C22.0001 0.505164 21.9277 0.330295 21.7988 0.201364C21.6699 0.072433 21.495 0 21.3126 0Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M7.76394 13.264L1.375 19.6529V15.8126C1.375 15.6303 1.30257 15.4554 1.17364 15.3265C1.0447 15.1975 0.869836 15.1251 0.6875 15.1251C0.505164 15.1251 0.330295 15.1975 0.201364 15.3265C0.072433 15.4554 0 15.6303 0 15.8126V21.3126C0 21.4949 0.072433 21.6698 0.201364 21.7987C0.330295 21.9277 0.505164 22.0001 0.6875 22.0001H6.1875C6.36984 22.0001 6.54471 21.9277 6.67364 21.7987C6.80257 21.6698 6.875 21.4949 6.875 21.3126C6.875 21.1303 6.80257 20.9554 6.67364 20.8265C6.54471 20.6975 6.36984 20.6251 6.1875 20.6251H2.34719L8.73606 14.2362C8.8613 14.1065 8.93059 13.9328 8.92903 13.7526C8.92746 13.5723 8.85516 13.3999 8.72769 13.2724C8.60022 13.1449 8.42779 13.0726 8.24753 13.0711C8.06727 13.0695 7.8936 13.1388 7.76394 13.264Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span class="space">Площадь 55м²</span>
+                  </div>
+                  <div class="placement__card-feature">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 14.598C0.89543 14.598 0 15.4935 0 16.598V18.8757C0 19.428 0.447715 19.8757 1 19.8757H1.75922V20.756C1.75922 21.2414 2.15272 21.6349 2.63812 21.6349C3.12353 21.6349 3.51703 21.2414 3.51703 20.756V19.8757H26.483V20.756C26.483 21.2414 26.8765 21.6349 27.3619 21.6349C27.8473 21.6349 28.2408 21.2414 28.2408 20.756V19.8757H29C29.5523 19.8757 30 19.428 30 18.8757V16.598C30 15.4935 29.1046 14.598 28 14.598H2Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M11.2526 9.47473H9.27986C8.2431 9.47473 7.33279 10.1023 6.82503 11.0416C6.66478 11.338 6.90445 11.6667 7.24143 11.6667H13.2911C13.628 11.6667 13.8677 11.338 13.7075 11.0416C13.1997 10.1023 12.2894 9.47473 11.2526 9.47473Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M20.6276 9.47473H18.6549C17.6181 9.47473 16.7078 10.1023 16.2 11.0416C16.0398 11.338 16.2795 11.6667 16.6164 11.6667H22.6661C23.003 11.6667 23.2427 11.338 23.0825 11.0416C22.5747 10.1023 21.6644 9.47473 20.6276 9.47473Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M3.75928 5.03174C2.65471 5.03174 1.75928 5.92717 1.75928 7.03174V13.4079C1.75928 13.6263 2.12546 13.7185 2.25912 13.5458C2.954 12.6478 4.04179 12.0686 5.26248 12.0686C5.32276 12.0686 5.37462 12.0257 5.38799 11.9669C5.82916 10.0262 7.41246 8.95823 9.5 8.95823C11.6237 8.95823 10.0628 8.95823 11.5 8.95823C12.4522 8.95823 13.3265 9.22034 14.0417 9.70826C14.5921 10.0838 15.4079 10.0838 15.9583 9.70826C16.6735 9.22034 17.5478 8.95823 18.5 8.95823C19.9372 8.95823 20.25 8.95823 20.25 8.95823C22.3376 8.95823 24.1624 10.0263 24.6118 11.967C24.6254 12.0257 24.6772 12.0686 24.7375 12.0686C25.9583 12.0686 27.0461 12.6479 27.741 13.5459C27.8746 13.7186 28.2408 13.6264 28.2408 13.408V7.03174C28.2408 5.92717 27.3454 5.03174 26.2408 5.03174H3.75928Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M25.0678 12.6996C24.8508 12.616 24.6189 12.5765 24.3864 12.5765H5.67373C5.40255 12.5765 5.13329 12.6304 4.88559 12.7408C3.83641 13.2082 3.22412 13.6065 3.22412 14.6151C3.22412 14.7855 3.36221 14.9236 3.53256 14.9236H26.468C26.6384 14.9236 26.7765 14.7855 26.7765 14.6151C26.7765 13.577 26.3276 13.1855 25.0678 12.6996Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span>2 спальни</span>
+                  </div>
+                  <a href="#" class="placement__card-more">Подробнее ↓</a>
+
+                  <div class="placement__card-details">
+                    <p class="placement__card-description">
+                      В&nbsp;доме 2&nbsp;спальни с&nbsp;двуспальными кроватями,
+                      просторная кухня-гостиная с&nbsp;диваном, мангальная зона,
+                      место для отдыха во&nbsp;дворе, бассейн, парковочное
+                      место.
+                    </p>
+                    <div class="placement__card-included-mobile">
+                      <h4 class="placement__card-included-title">Включено:</h4>
+                      <ul class="placement__card-included-list">
+                        <li class="placement__card-included-item">
+                          Постельное белье
+                        </li>
+                        <li class="placement__card-included-item">
+                          Индивидуальный комплект полотенец, душевая косметика
+                        </li>
+                        <li class="placement__card-included-item">Фен</li>
+                        <li class="placement__card-included-item">ТВ</li>
+                        <li class="placement__card-included-item">
+                          Чайник, посуда
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="placement__card-price">
+                  Стоимость :
+                  <strong class="placement__card-price-strong"
+                    >от&nbsp;22&nbsp;000&nbsp;₽/сутки</strong
+                  >
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Забронировать
+                </button>
+              </div>
+            </article>
+
+            <!-- Дом без бассейна -->
+            <article class="placement__card placement__card-second">
+              <h3 class="placement__card-title-mobile">Дом без бассейна</h3>
+              <div
+                class="placement__card-content placement__card-content-second"
+              >
+                <h3 class="placement__card-title">Дом без бассейна</h3>
+                <ul class="placement__card-list">
+                  <li class="placement__card-item">
+                    2&nbsp;спальни с&nbsp;двуспальными кроватями
+                  </li>
+                  <li class="placement__card-item">
+                    Просторная кухня-гостиная с&nbsp;диваном
+                  </li>
+                  <li class="placement__card-item">Мангальная зона</li>
+                  <li class="placement__card-item">
+                    Место для отдыха во&nbsp;дворе
+                  </li>
+                  <li class="placement__card-item">Парковочное место</li>
+                </ul>
+
+                <div class="placement__card-included">
+                  <h4 class="placement__card-included-title">Включено:</h4>
+                  <ul class="placement__card-included-list">
+                    <li class="placement__card-included-item">
+                      Постельное белье
+                    </li>
+                    <li class="placement__card-included-item">
+                      Индивидуальный комплект полотенец, душевая косметика
+                    </li>
+                    <li class="placement__card-included-item">Фен</li>
+                    <li class="placement__card-included-item">ТВ</li>
+                    <li class="placement__card-included-item">
+                      Чайник, посуда
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Характеристики с иконками -->
+                <div class="placement__card-features">
+                  <div class="placement__card-feature">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0001 4.51697C11.6581 4.51697 8.94092 7.23834 8.94092 10.5803C8.94092 13.9181 11.6581 16.6395 15.0001 16.6395C18.3421 16.6395 21.0593 13.9181 21.0593 10.5803C21.0593 7.23834 18.3421 4.51697 15.0001 4.51697Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M19.2459 16.3948C18.1012 17.2292 16.6923 17.7282 15.1701 17.7282C13.648 17.7282 12.2391 17.2292 11.0943 16.3948C6.83405 17.2209 4.75 19.5271 4.75 23.3932V25.3137C4.75 25.5486 4.93872 25.733 5.16934 25.733H8.87613H9.03125H9.17188C9.25 25.733 9.41431 25.733 9.41431 25.733H9.56665H9.71475H20.6255C20.7902 25.733 20.8561 25.733 20.6255 25.733H21.4641H25.1709C25.4015 25.733 25.5902 25.5486 25.5902 25.3137V23.3932C25.5902 19.5271 23.5062 17.2209 19.2459 16.3948Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span>До 6 гостей</span>
+                  </div>
+                  <div class="placement__card-feature">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.3126 0H15.8126C15.6303 0 15.4554 0.072433 15.3265 0.201364C15.1976 0.330295 15.1251 0.505164 15.1251 0.6875C15.1251 0.869836 15.1976 1.0447 15.3265 1.17364C15.4554 1.30257 15.6303 1.375 15.8126 1.375H19.653L13.2641 7.76394C13.1984 7.82736 13.146 7.90322 13.11 7.9871C13.074 8.07097 13.055 8.16119 13.0542 8.25247C13.0534 8.34376 13.0708 8.43429 13.1054 8.51878C13.14 8.60327 13.191 8.68003 13.2556 8.74458C13.3201 8.80914 13.3969 8.86018 13.4814 8.89475C13.5659 8.92932 13.6564 8.94672 13.7477 8.94592C13.839 8.94513 13.9292 8.92616 14.0131 8.89013C14.0969 8.8541 14.1728 8.80173 14.2362 8.73606L20.6251 2.34719V6.1875C20.6251 6.36984 20.6976 6.54471 20.8265 6.67364C20.9554 6.80257 21.1303 6.875 21.3126 6.875C21.495 6.875 21.6699 6.80257 21.7988 6.67364C21.9277 6.54471 22.0001 6.36984 22.0001 6.1875V0.6875C22.0001 0.505164 21.9277 0.330295 21.7988 0.201364C21.6699 0.072433 21.495 0 21.3126 0Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M7.76394 13.264L1.375 19.6529V15.8126C1.375 15.6303 1.30257 15.4554 1.17364 15.3265C1.0447 15.1975 0.869836 15.1251 0.6875 15.1251C0.505164 15.1251 0.330295 15.1975 0.201364 15.3265C0.072433 15.4554 0 15.6303 0 15.8126V21.3126C0 21.4949 0.072433 21.6698 0.201364 21.7987C0.330295 21.9277 0.505164 22.0001 0.6875 22.0001H6.1875C6.36984 22.0001 6.54471 21.9277 6.67364 21.7987C6.80257 21.6698 6.875 21.4949 6.875 21.3126C6.875 21.1303 6.80257 20.9554 6.67364 20.8265C6.54471 20.6975 6.36984 20.6251 6.1875 20.6251H2.34719L8.73606 14.2362C8.8613 14.1065 8.93059 13.9328 8.92903 13.7526C8.92746 13.5723 8.85516 13.3999 8.72769 13.2724C8.60022 13.1449 8.42779 13.0726 8.24753 13.0711C8.06727 13.0695 7.8936 13.1388 7.76394 13.264Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span class="space">Площадь 55м²</span>
+                  </div>
+                  <div class="placement__card-feature">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 14.598C0.89543 14.598 0 15.4935 0 16.598V18.8757C0 19.428 0.447715 19.8757 1 19.8757H1.75922V20.756C1.75922 21.2414 2.15272 21.6349 2.63812 21.6349C3.12353 21.6349 3.51703 21.2414 3.51703 20.756V19.8757H26.483V20.756C26.483 21.2414 26.8765 21.6349 27.3619 21.6349C27.8473 21.6349 28.2408 21.2414 28.2408 20.756V19.8757H29C29.5523 19.8757 30 19.428 30 18.8757V16.598C30 15.4935 29.1046 14.598 28 14.598H2Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M11.2526 9.47473H9.27986C8.2431 9.47473 7.33279 10.1023 6.82503 11.0416C6.66478 11.338 6.90445 11.6667 7.24143 11.6667H13.2911C13.628 11.6667 13.8677 11.338 13.7075 11.0416C13.1997 10.1023 12.2894 9.47473 11.2526 9.47473Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M20.6276 9.47473H18.6549C17.6181 9.47473 16.7078 10.1023 16.2 11.0416C16.0398 11.338 16.2795 11.6667 16.6164 11.6667H22.6661C23.003 11.6667 23.2427 11.338 23.0825 11.0416C22.5747 10.1023 21.6644 9.47473 20.6276 9.47473Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M3.75928 5.03174C2.65471 5.03174 1.75928 5.92717 1.75928 7.03174V13.4079C1.75928 13.6263 2.12546 13.7185 2.25912 13.5458C2.954 12.6478 4.04179 12.0686 5.26248 12.0686C5.32276 12.0686 5.37462 12.0257 5.38799 11.9669C5.82916 10.0262 7.41246 8.95823 9.5 8.95823C11.6237 8.95823 10.0628 8.95823 11.5 8.95823C12.4522 8.95823 13.3265 9.22034 14.0417 9.70826C14.5921 10.0838 15.4079 10.0838 15.9583 9.70826C16.6735 9.22034 17.5478 8.95823 18.5 8.95823C19.9372 8.95823 20.25 8.95823 20.25 8.95823C22.3376 8.95823 24.1624 10.0263 24.6118 11.967C24.6254 12.0257 24.6772 12.0686 24.7375 12.0686C25.9583 12.0686 27.0461 12.6479 27.741 13.5459C27.8746 13.7186 28.2408 13.6264 28.2408 13.408V7.03174C28.2408 5.92717 27.3454 5.03174 26.2408 5.03174H3.75928Z"
+                        fill="#40403E"
+                      />
+                      <path
+                        d="M25.0678 12.6996C24.8508 12.616 24.6189 12.5765 24.3864 12.5765H5.67373C5.40255 12.5765 5.13329 12.6304 4.88559 12.7408C3.83641 13.2082 3.22412 13.6065 3.22412 14.6151C3.22412 14.7855 3.36221 14.9236 3.53256 14.9236H26.468C26.6384 14.9236 26.7765 14.7855 26.7765 14.6151C26.7765 13.577 26.3276 13.1855 25.0678 12.6996Z"
+                        fill="#40403E"
+                      />
+                    </svg>
+
+                    <span>2 спальни</span>
+                  </div>
+                  <a href="#" class="placement__card-more">Подробнее ↓</a>
+
+                  <div class="placement__card-details">
+                    <p class="placement__card-description">
+                      В&nbsp;доме 2&nbsp;спальни с&nbsp;двуспальными кроватями,
+                      просторная кухня-гостиная с&nbsp;диваном, мангальная зона,
+                      местодля отдыха во&nbsp;дворе, парковочное место.
+                    </p>
+                    <div class="placement__card-included-mobile">
+                      <h4 class="placement__card-included-title">Включено:</h4>
+                      <ul class="placement__card-included-list">
+                        <li class="placement__card-included-item">
+                          Постельное белье
+                        </li>
+                        <li class="placement__card-included-item">
+                          Индивидуальный комплект полотенец, душевая косметика
+                        </li>
+                        <li class="placement__card-included-item">Фен</li>
+                        <li class="placement__card-included-item">ТВ</li>
+                        <li class="placement__card-included-item">
+                          Чайник, посуда
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="placement__card-price placement__card-price-special">
+                  Стоимость :
+                  <strong class="placement__card-price-strong"
+                    >от&nbsp;15&nbsp;000&nbsp;₽/сутки</strong
+                  >
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Забронировать
+                </button>
+              </div>
+
+              <div
+                class="placement__card-gallery swiper"
+                aria-label="Галерея изображений дома без бассейна"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-1.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-2.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-3.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-4.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-5.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-6.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/placements/without-a-pool/without-a-pool-7.jpg"
+                      alt="Вид дома без бассейна"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advantages Section -->
+      <section class="advantages">
+        <svg
+          class="advantages__bg"
+          viewBox="0 0 1920 924"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M1871 0C1898.06 2.88628e-05 1920 21.9381 1920 49V730C1920 746.569 1906.57 760 1890 760H30C13.4315 760 0 746.569 0 730V49C1.80416e-06 21.938 21.938 0 49 0H1871Z"
+            fill="#395A5F"
+          />
+        </svg>
+
+        <div class="container">
+          <h2 class="advantages__title">Почему выбирают нас?</h2>
+          <div class="advantages__grid">
+            <div class="advantage-item">
+              <img
+                src="./img/Advantages/location.svg"
+                alt="Иконка идеального расположения"
+                class="advantage-icon"
+                loading="lazy"
+              />
+              <h3 class="advantage-title">Идеальное расположение</h3>
+              <p class="advantage-text">
+                Близко к&nbsp;озеру, но&nbsp;в&nbsp;тихом месте
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./img/Advantages/rest.svg"
+                alt="Иконка комфортного отдыха"
+                class="advantage-icon"
+                loading="lazy"
+              />
+              <h3 class="advantage-title">Все для комфортного отдыха</h3>
+              <p class="advantage-text">
+                От&nbsp;полностью оборудованной кухни до&nbsp;зоны барбекю
+              </p>
+            </div>
+            <div class="advantage-item">
+              <img
+                src="./img/Advantages/party.svg"
+                alt="Иконка возможности объединения"
+                class="advantage-icon"
+                loading="lazy"
+              />
+              <h3 class="advantage-title">Возможность объединения</h3>
+              <p class="advantage-text">Удобно для больших компаний</p>
+            </div>
+            <div class="advantage-item advantage-item-mobile">
+              <img
+                src="./img/Advantages/comfort.svg"
+                alt="Иконка атмосферы уюта"
+                class="advantage-icon"
+                loading="lazy"
+              />
+              <h3 class="advantage-title">Атмосфера уюта</h3>
+              <p class="advantage-text">
+                Продуманный дизайн и&nbsp;забота о&nbsp;гостях
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section class="activities" id="activities">
+        <div class="container">
+          <h2 class="activities__title">Чем заняться рядом?</h2>
+          <div class="activities__main">
+            <div class="slide slide-active">
+              <div class="slide__wrap">
+                <p class="slide__wrap-text">
+                  Трекинговые маршруты по&nbsp;виноградникам и&nbsp;горным
+                  тропам
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__wrap">
+                <p class="slide__wrap-text">
+                  Дегустации в&nbsp;одной из&nbsp;лучших виноделен региона
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__wrap">
+                <p class="slide__wrap-text">
+                  Пешие прогулки по&nbsp;берегу озера
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__wrap">
+                <p class="slide__wrap-text">
+                  Водные прогулки на&nbsp;лодках, катерах и&nbsp;яхтах
+                  по&nbsp;зеркальной глади озера
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__content-wrap">
+              <div class="footer__content-contacts">
+                <h2 class="footer__title">КОНТАКТЫ</h2>
+                <address
+                  class="footer__address"
+                  aria-label="Адрес: село Абрау-Дюрсо"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_234_278)">
+                      <path
+                        d="M15 0.000976562C9.48611 0.000976562 5 4.48709 5 10.001C5 11.6563 5.41385 13.2975 6.20059 14.7532L14.4532 29.6787C14.563 29.8777 14.7724 30.001 15 30.001C15.2277 30.001 15.437 29.8777 15.5469 29.6787L23.8025 14.7483C24.5862 13.2975 25 11.6562 25 10.0009C25 4.48709 20.5139 0.000976562 15 0.000976562ZM15 15.001C12.2431 15.001 10 12.7579 10 10.001C10 7.24404 12.2431 5.00102 15 5.00102C17.757 5.00102 20 7.24404 20 10.001C20 12.7579 17.757 15.001 15 15.001Z"
+                        fill="#395A5F"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_234_278">
+                        <rect
+                          width="30"
+                          height="30"
+                          fill="white"
+                          transform="translate(0 0.000976562)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  село Абрау-Дюрсо, Центральная ул., 2А
+                </address>
+                <a href="tel:+79394624343" class="footer__phone">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.1597 21.6322C26.0213 21.5234 25.8782 21.4108 25.7443 21.2997C25.0337 20.711 24.2777 20.1684 23.5466 19.6436C23.3949 19.5348 23.2432 19.4259 23.092 19.3168C22.1555 18.6396 21.3136 18.3105 20.5181 18.3105C19.4468 18.3105 18.5127 18.9199 17.7417 20.1216C17.4002 20.6544 16.9858 20.9134 16.4751 20.9134C16.1731 20.9134 15.83 20.8247 15.4554 20.6496C12.4326 19.2385 10.2741 17.0749 9.03976 14.2189C8.44308 12.8385 8.63651 11.9362 9.68661 11.2019C10.2829 10.7852 11.3929 10.0096 11.3142 8.5242C11.2252 6.83742 7.60998 1.76211 6.08675 1.18567C5.44183 0.941515 4.76423 0.93924 4.06913 1.17998C2.31804 1.78599 1.06144 2.85026 0.434839 4.25754C-0.170678 5.61733 -0.143334 7.21397 0.513923 8.87488C2.41398 13.6769 5.08535 17.8637 8.45413 21.3187C11.7516 24.7008 15.8044 27.4711 20.4999 29.5526C20.9231 29.74 21.3671 29.8423 21.6912 29.9169C21.8017 29.9425 21.8971 29.9643 21.9666 29.9839C22.0048 29.9946 22.0442 30.0004 22.0837 30.0008L22.1208 30.001C22.1208 30.001 22.1208 30.001 22.121 30.001C24.3295 30.001 26.9813 27.9234 27.7957 25.5549C28.5092 23.481 27.2064 22.4558 26.1597 21.6322Z"
+                      fill="#395A5F"
+                    />
+                  </svg>
+
+                  +7 (939) 462-43-43
+                </a>
+              </div>
+              <div class="footer__content-socials">
+                <div class="socials-wrap">
+                  <a
+                    href="https://instagram.com/wow.abrau"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Перейти в Instagram Wow Abrau"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_234_268)">
+                        <path
+                          fill="currentColor"
+                          d="M22.4995 0.000976562H7.49982C3.37528 0.000976562 0 3.37626 0 7.50079V22.5012C0 26.6246 3.37528 30.001 7.49982 30.001H22.4995C26.624 30.001 29.9993 26.6246 29.9993 22.5012V7.50079C29.9993 3.37626 26.624 0.000976562 22.4995 0.000976562ZM27.4992 22.5012C27.4992 25.2573 25.2572 27.5009 22.4995 27.5009H7.49982C4.74327 27.5009 2.50006 25.2573 2.50006 22.5012V7.50079C2.50006 4.74388 4.74327 2.50104 7.49982 2.50104H22.4995C25.2572 2.50104 27.4992 4.74388 27.4992 7.50079V22.5012Z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="M23 9.00098C24.1046 9.00098 25 8.10555 25 7.00098C25 5.89641 24.1046 5.00098 23 5.00098C21.8954 5.00098 21 5.89641 21 7.00098C21 8.10555 21.8954 9.00098 23 9.00098Z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="M15.4998 7.00098C11.3569 7.00098 8 10.3582 8 14.5008C8 18.6418 11.3569 22.0013 15.4998 22.0013C19.6416 22.0013 22.9996 18.6418 22.9996 14.5008C22.9996 10.3582 19.6416 7.00098 15.4998 7.00098ZM15.4998 19.5013C12.7387 19.5013 10.5001 17.2626 10.5001 14.5008C10.5001 11.739 12.7387 9.50104 15.4998 9.50104C18.2609 9.50104 20.4996 11.739 20.4996 14.5008C20.4996 17.2626 18.2609 19.5013 15.4998 19.5013Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_234_268">
+                          <rect width="30" height="30" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <span>+7 (939) 462-43-43</span>
+                </div>
+                <div class="socials-wrap">
+                  <a
+                    href="https://wa.me/79394624343"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Перейти в WhatsApp Wow Abrau"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_234_264)">
+                        <path
+                          fill="currentColor"
+                          d="M0 30L2.58 22.2605C1.27086 20.0586 0.517241 17.489 0.517241 14.7414C0.517241 6.6 7.11724 0 15.2586 0C23.4 0 30 6.6 30 14.7414C30 22.8828 23.4 29.4828 15.2586 29.4828C12.7816 29.4828 10.4488 28.8688 8.4 27.7898L0 30Z"
+                        />
+                        <path
+                          fill="white"
+                          d="M24.8327 19.7695C24.1381 18.4569 21.5768 16.9559 21.5768 16.9559C20.9973 16.6256 20.298 16.5886 19.9676 17.1776C19.9676 17.1776 19.1353 18.1756 18.9237 18.3192C17.9568 18.9741 17.0611 18.9488 16.157 18.0447L14.0559 15.9437L11.9549 13.8426C11.0508 12.9386 11.0254 12.0429 11.6804 11.0761C11.824 10.8644 12.822 10.0321 12.822 10.0321C13.411 9.70122 13.3741 9.00245 13.0437 8.42296C13.0437 8.42296 11.5427 5.8617 10.2301 5.16715C9.67168 4.8716 8.9861 4.97505 8.5396 5.42154L7.61176 6.34936C4.66833 9.29273 6.11762 12.6156 9.06104 15.5589L11.7511 18.249L14.4412 20.939C17.3847 23.8824 20.7075 25.3316 23.651 22.3883L24.5788 21.4605C25.0253 21.0129 25.1282 20.3273 24.8327 19.7695Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_234_264">
+                          <rect width="30" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <span>+7 (939) 462-43-43</span>
+                </div>
+                <div class="socials-wrap">
+                  <a
+                    href="tg://resolve?domain=wow_abrau"
+                    aria-label="Перейти в Telegram Wow Abrau"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M0.529889 14.4669L7.4425 17.0351L10.1181 25.6002C10.2893 26.1488 10.9632 26.3516 11.4105 25.9875L15.2637 22.8608C15.6676 22.5332 16.2429 22.5169 16.665 22.8218L23.6148 27.8444C24.0933 28.1906 24.7712 27.9296 24.8912 27.354L29.9823 2.97743C30.1133 2.34874 29.4927 1.82426 28.8913 2.05579L0.521789 12.9496C-0.178312 13.2184 -0.172212 14.205 0.529889 14.4669ZM9.6869 15.668L23.1967 7.38549C23.4395 7.23707 23.6893 7.56387 23.4808 7.75638L12.3313 18.0728C11.9394 18.4359 11.6866 18.9218 11.615 19.4493L11.2352 22.251C11.1849 22.6251 10.657 22.6622 10.5533 22.3002L9.0926 17.1912C8.9253 16.6085 9.1691 15.9861 9.6869 15.668Z"
+                      />
+                    </svg>
+                  </a>
+                  <span>wow.abrau</span>
+                </div>
+              </div>
+            </div>
+            <div class="footer__content-map" id="map"></div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Модальное окно бронирования -->
+    <div class="modal-overlay" id="bookingModal">
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Закрыть окно">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M18 6L6 18M6 6l12 12"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+
+        <h3 class="modal-title">Забронировать проживание</h3>
+
+        <div class="modal-tabs">
+          <button class="tab-btn active" data-tab="call" aria-selected="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            Позвонить
+          </button>
+
+          <button class="tab-btn" data-tab="whatsapp" aria-selected="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                fill="currentColor"
+                d="M17.6 6.32A7.85 7.85 0 0 0 12 4a8 8 0 0 0-8 8 7.9 7.9 0 0 0 1.36 4.45L4 20l3.55-1.36A7.9 7.9 0 0 0 12 20a8 8 0 0 0 8-8 7.85 7.85 0 0 0-2.4-5.68zM12 18.5a6.57 6.57 0 0 1-3.36-.93l-.24-.14-2.73.7.73-2.66-.17-.27a6.55 6.55 0 0 1 6-9.44 6.52 6.52 0 0 1 4.66 1.92 6.47 6.47 0 0 1 1.91 4.66 6.55 6.55 0 0 1-6.59 6.56zm3.61-4.91c-.19-.1-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.61-.59.73-.22.14-.41 0a5.13 5.13 0 0 1-2.51-2.18c-.19-.33.19-.31.54-1.08a.37.37 0 0 0 0-.35c0-.1-.42-1-.58-1.37s-.32-.33-.45-.33h-.38a.71.71 0 0 0-.53.25A2.19 2.19 0 0 0 9 10.17a3.82 3.82 0 0 0 .81 2.05 8.9 8.9 0 0 0 3.39 3 3.85 3.85 0 0 0 2.38.5 2 2 0 0 0 1.33-.94 1.62 1.62 0 0 0 .12-.94c-.09-.1-.22-.15-.42-.25z"
+              />
+            </svg>
+            WhatsApp
+          </button>
+
+          <button class="tab-btn" data-tab="telegram" aria-selected="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.158l-1.94 9.226c-.145.658-.537.818-1.084.509l-3-2.21-1.445 1.394c-.159.159-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.96-.924c-.64-.203-.652-.64.135-.945l11.566-4.458c.534-.196 1.006.128.832.945z"
+              />
+            </svg>
+            Telegram
+          </button>
+        </div>
+
+        <!-- Вкладка звонка -->
+        <div class="tab-content active" id="callTab" role="tabpanel">
+          <div class="contact-method">
+            <p class="method-description">
+              Позвоните нам для консультации и бронирования
+            </p>
+            <a href="tel:+79394624343" class="contact-number"
+              >+7 (939) 462-43-43</a
+            >
+            <div class="method-buttons">
+              <a href="tel:+79394624343" class="btn btn-primary btn-call">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                Позвонить сейчас
+              </a>
+              <button class="btn btn-secondary" id="copyNumber">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                  />
+                </svg>
+                Скопировать номер
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Вкладка WhatsApp -->
+        <div class="tab-content" id="whatsappTab" role="tabpanel" hidden>
+          <div class="contact-method">
+            <p class="method-description">
+              Напишите нам в WhatsApp для быстрого ответа
+            </p>
+            <div class="contact-info">
+              <span class="contact-number">+7 (939) 462-43-43</span>
+              <span class="response-time">Ответим в течение 5 минут</span>
+            </div>
+            <div class="method-buttons">
+              <a
+                href="https://wa.me/79394624343"
+                class="btn btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12.017 2.047c-5.511 0-9.98 4.468-9.98 9.98 0 1.761.459 3.478 1.33 4.987l-1.346 4.93 5.05-1.321c1.459.783 3.101 1.196 4.769 1.196 5.511 0 9.98-4.468 9.98-9.98s-4.468-9.98-9.98-9.98zm5.698 13.39c-.125.355-.722.65-1.001.69-.271.041-.625.063-.969-.071-.298-.115-.718-.267-1.365-.521-2.271-.899-3.751-2.995-3.866-3.133-.115-.139-.921-1.175-.921-2.24 0-1.065.542-1.585.75-1.809.188-.203.417-.26.563-.26.125 0 .24 0 .344.01.104.01.25-.031.391.24.135.26.469.901.51.969.041.063.083.146.021.24-.063.094-.083.146-.177.24-.094.094-.188.208-.261.271-.094.083-.188.167-.083.323.104.156.469.667 1 1.084.688.542 1.261.708 1.417.781.156.083.25.063.344-.031.094-.094.406-.469.51-.625.104-.156.208-.135.344-.083.136.063.865.406 1.01.479.146.073.25.115.281.177.031.063.031.365-.094.719z"
+                  />
+                </svg>
+                Написать в WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Вкладка Telegram -->
+        <div class="tab-content" id="telegramTab" role="tabpanel" hidden>
+          <div class="contact-method">
+            <p class="method-description">Свяжитесь с нами через Telegram</p>
+            <div class="contact-info">
+              <span class="contact-username">@wow_abrau</span>
+              <span class="response-time">Быстрая связь через Telegram</span>
+            </div>
+            <div class="method-buttons">
+              <a href="tg://resolve?domain=wow_abrau" class="btn btn-telegram">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.158l-1.94 9.226c-.145.658-.537.818-1.084.509l-3-2.21-1.445 1.394c-.159.159-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.96-.924c-.64-.203-.652-.64.135-.945l11.566-4.458c.534-.196 1.006.128.832.945z"
+                  />
+                </svg>
+                Написать в Telegram
+              </a>
+              <a
+                href="https://t.me/wow_abrau"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Открыть в браузере
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
